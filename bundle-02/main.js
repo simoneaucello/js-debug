@@ -91,11 +91,12 @@ function checkAccessImproved() {
             console.log('Accesso negato!');
         }
     }
+}
     checkAccessImproved();
 
 
-}
 //parentesi graffa finale
+// variabili booleano da inserire senza gli apici
 
 
 

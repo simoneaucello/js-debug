@@ -11,7 +11,7 @@
 
 
 // ESERCIZIO 1
-for (let i = 0; i > 5; i++) {
+for (let i = 0; i < 5; i++) {
     console.log(i);
 }
 
@@ -20,9 +20,9 @@ for (let i = 0; i > 5; i++) {
 // ESERCIZIO 2
 function addIfEven(num) {
     if (num % 2 === 0) {
-        // return num + 5;
+        return num + 5;
     }
-    return num + 5;
+    return num;
 }
 console.log(addIfEven(5));
 // segno di uguaglianza sbagliato/ errore di sintassi 
@@ -34,6 +34,7 @@ function loopToFive() {
         console.log(i);
     }
 }
+loopToFive();
 // punto e virgola al posto della virgola/ errore di sintassi
 
 

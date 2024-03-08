@@ -50,7 +50,7 @@ const cars = [
     {
         manufacturer: 'Ford',
         model: 'Kuga',
-        type: 'diesel'
+        type: 'Diesel'
     },
     {
         manufacturer: 'Seat',
@@ -61,19 +61,19 @@ const cars = [
     {
         manufacturer: 'Audi',
         model: 'R8',
-        type: 'benzina'
+        type: 'Benzina'
     },
 ];
 // errore sintattico maiuscole e minuscole
 
-const gasolineCars = cars.filter( (auto) => auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) => auto.type.toLowerCase() === 'benzina');
 //arrow function errore di sintassi
 
-const dieselCars = cars.filter( (auto) => auto.type === 'diesel');
+const dieselCars = cars.filter( (auto) => auto.type.toLowerCase() === 'diesel');
 // trasformata in arrow function, prima mancava il return 
 
 const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' && auto.type !== 'diesel';
+    return auto.type.toLowerCase() !== 'benzina' && auto.type.toLowerCase() !== 'diesel';
 });
 // && al posto di ||
 
