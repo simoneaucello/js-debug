@@ -25,7 +25,7 @@ const cars = [
     {
         manufacturer: 'Volkswagen',
         model: 'Golf',
-        type: 'Benzina'
+        type: 'benzina'
     },
     {
         manufacturer: 'Fiat',
@@ -50,29 +50,32 @@ const cars = [
     {
         manufacturer: 'Ford',
         model: 'Kuga',
-        type: 'Diesel'
+        type: 'diesel'
     },
     {
         manufacturer: 'Seat',
         model: 'Ibiza',
         type: 'metano'
-    }
+    },
+    //virgola dopo la chiusura della graffa
     {
         manufacturer: 'Audi',
         model: 'R8',
-        type: 'Benzina'
+        type: 'benzina'
     },
 ];
+// errore sintattico maiuscole e minuscole
 
-const gasolineCars = cars.filter( (auto) >= auto.type === 'benzina');
+const gasolineCars = cars.filter( (auto) => auto.type === 'benzina');
+//arrow function errore di sintassi
 
-const dieselCars = cars.filter( (auto) => {
-    auto.type === 'diesel';
-});
+const dieselCars = cars.filter( (auto) => auto.type === 'diesel');
+// trasformata in arrow function, prima mancava il return 
 
 const otherCars = cars.filter( (auto) => {
-    return auto.type !== 'benzina' || auto.type !== 'diesel';
+    return auto.type !== 'benzina' && auto.type !== 'diesel';
 });
+// && al posto di ||
 
 console.log('Auto a benzina');
 console.log('*******************************');
